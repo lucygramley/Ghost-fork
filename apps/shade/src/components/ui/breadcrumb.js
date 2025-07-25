@@ -1,0 +1,23 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import * as React from 'react';
+import { Slot } from '@radix-ui/react-slot';
+import { ChevronRight, MoreHorizontal } from 'lucide-react';
+import { cn } from '@/lib/utils';
+const Breadcrumb = React.forwardRef(({ ...props }, ref) => _jsx("nav", { ref: ref, "aria-label": "breadcrumb", ...props }));
+Breadcrumb.displayName = 'Breadcrumb';
+const BreadcrumbList = React.forwardRef(({ className, ...props }, ref) => (_jsx("ol", { ref: ref, className: cn('flex flex-wrap items-center gap-1.5 break-words text-sm font-medium text-muted-foreground sm:gap-2.5 h-[34px]', className), ...props })));
+BreadcrumbList.displayName = 'BreadcrumbList';
+const BreadcrumbItem = React.forwardRef(({ className, ...props }, ref) => (_jsx("li", { ref: ref, className: cn('inline-flex items-center gap-1.5', className), ...props })));
+BreadcrumbItem.displayName = 'BreadcrumbItem';
+const BreadcrumbLink = React.forwardRef(({ asChild, className, ...props }, ref) => {
+    const Comp = asChild ? Slot : 'a';
+    return (_jsx(Comp, { ref: ref, className: cn('transition-colors hover:text-foreground', className), ...props }));
+});
+BreadcrumbLink.displayName = 'BreadcrumbLink';
+const BreadcrumbPage = React.forwardRef(({ className, ...props }, ref) => (_jsx("span", { ref: ref, "aria-current": "page", "aria-disabled": "true", className: cn('font-medium text-foreground', className), role: "link", ...props })));
+BreadcrumbPage.displayName = 'BreadcrumbPage';
+const BreadcrumbSeparator = ({ children, className, ...props }) => (_jsx("li", { "aria-hidden": "true", className: cn('[&>svg]:w-3.5 [&>svg]:h-3.5', className), role: "presentation", ...props, children: children ?? _jsx(ChevronRight, {}) }));
+BreadcrumbSeparator.displayName = 'BreadcrumbSeparator';
+const BreadcrumbEllipsis = ({ className, ...props }) => (_jsxs("span", { "aria-hidden": "true", className: cn('flex h-9 w-9 items-center justify-center', className), role: "presentation", ...props, children: [_jsx(MoreHorizontal, { className: "size-4" }), _jsx("span", { className: "sr-only", children: "More" })] }));
+BreadcrumbEllipsis.displayName = 'BreadcrumbElipssis';
+export { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbPage, BreadcrumbSeparator, BreadcrumbEllipsis };

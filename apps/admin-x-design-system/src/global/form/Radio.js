@@ -1,0 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import Heading from '../Heading';
+import Hint from '../Hint';
+import Separator from '../Separator';
+import * as RadioPrimitive from '@radix-ui/react-radio-group';
+const Radio = ({ id, title, options, onSelect, error, hint, selectedOption, separator }) => {
+    return (_jsxs(RadioPrimitive.Root, { defaultValue: selectedOption, name: id, onValueChange: onSelect, children: [_jsxs("div", { className: `flex flex-col gap-2 ${separator && 'pb-2'}`, children: [title && _jsx(Heading, { level: 6, children: title }), options.map(option => (_jsxs("label", { className: `flex cursor-pointer items-start ${title && '-mb-1 mt-1'}`, htmlFor: option.value, children: [_jsx(RadioPrimitive.Item, { className: "relative float-left mt-[3px] h-4 w-4 min-w-[16px] appearance-none rounded-full border-2 border-solid border-grey-300 hover:cursor-pointer focus:shadow-none focus:outline-none focus:ring-0 data-[state=checked]:border-green data-[state=checked]:focus:border-green dark:border-grey-800 dark:text-white dark:data-[state=checked]:border-green dark:data-[state=checked]:focus:border-green", id: option.value, value: option.value, children: _jsx(RadioPrimitive.Indicator, { className: "flex h-full w-full items-center justify-center after:block after:h-[6px] after:w-[6px] after:rounded-full after:border-green after:bg-green after:content-[''] dark:after:border-green dark:after:bg-green" }) }), _jsxs("div", { className: `ml-2 flex flex-col ${option.hint && 'mb-2'}`, children: [_jsx("span", { className: `inline-block text-md dark:text-white ${option.hint && '-mb-1'}`, children: option.label }), option.hint && _jsx(Hint, { children: option.hint })] })] }, option.value))), hint && _jsx(Hint, { color: error ? 'red' : '', children: hint })] }), (separator || error) && _jsx(Separator, { className: error ? 'border-red' : '' })] }));
+};
+export default Radio;

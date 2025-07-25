@@ -1,0 +1,26 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import clsx from 'clsx';
+const StickyFooter = ({ shiftY, footerBgColorClass = 'bg-white dark:bg-black', contentBgColorClass = 'bg-white dark:bg-black', height = 96, children }) => {
+    const containerClasses = clsx('w-100 sticky bottom-[-24px] z-[297] m-0 box-border p-0');
+    const containerBottom = shiftY ? `calc(${shiftY} - 24px)` : '-24px';
+    const containerHeight = `${height + 24}px`;
+    const coverClasses = clsx('sticky z-[298] block h-[24px]', contentBgColorClass);
+    const coverBottom = '0';
+    const contentClasses = clsx(`sticky z-[299] mb-[-24px] flex items-center justify-between`, 'h-[96px]', footerBgColorClass);
+    const contentBottom = '0';
+    const contentHeight = `${height}px`;
+    const shadowClasses = `sticky mx-2 block h-[24px] rounded-full shadow-[0_0_0_1px_rgba(0,0,0,.025),0_-8px_16px_-3px_rgba(0,0,0,.08)]`;
+    const shadowBottom = shiftY ? `calc(${shiftY} + ${height - 24}px)` : `${height - 24}px`;
+    return (_jsxs("div", { className: containerClasses, style: {
+            bottom: containerBottom,
+            height: containerHeight
+        }, children: [_jsx("div", { className: coverClasses, style: {
+                    bottom: coverBottom
+                } }), _jsx("div", { className: contentClasses, style: {
+                    bottom: contentBottom,
+                    height: contentHeight
+                }, children: children }), _jsx("div", { className: shadowClasses, style: {
+                    bottom: shadowBottom
+                } })] }));
+};
+export default StickyFooter;
