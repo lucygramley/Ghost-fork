@@ -1,0 +1,106 @@
+[2025-07-25 11:23:08.301] Changing working directory from C:\Users\lucygramley to c:\Users\lucygramley\Downloads\ai_test_repos\Ghost-fork
+[2025-07-25 11:24:01.332] Updating 8 packages at c:\Users\lucygramley\Downloads\ai_test_repos\Ghost-fork
+[2025-07-25 11:24:19.064] Analyzing project at: c:\Users\lucygramley\Downloads\ai_test_repos\Ghost-fork
+[2025-07-25 11:24:19.066] Analyzing repository structure...
+[2025-07-25 11:24:19.430] Detected monorepo structure with 16 packages
+[2025-07-25 11:24:19.432] Generating installation commands...
+[2025-07-25 11:24:19.500] Found 1 package installation tasks
+[2025-07-25 11:24:19.503] Installing packages...
+[2025-07-25 11:25:06.518] Looking for local TypeScript installation...
+[2025-07-25 11:25:06.521] Using local TypeScript compiler at: c:\Users\lucygramley\Downloads\ai_test_repos\Ghost-fork\node_modules\typescript\lib\tsc.js
+[2025-07-25 11:25:06.523] Building project to collect baseline errors...
+[2025-07-25 11:26:58.803] Found 1474 errors in initial build
+[2025-07-25 11:27:14.767] Updating packages in the following order:
+ chalk, concurrently, eslint, husky, inquirer, lint-staged, nx, rimraf
+[2025-07-25 11:27:15.120] Using VS Code provided token for Kusto authentication
+[2025-07-25 11:27:15.173] Updating package group (1/8): chalk
+[2025-07-25 11:27:41.475] Updating chalk from 4.1.2 to 5.4.1
+[2025-07-25 11:28:18.828] No new errors found after updating chalk.
+[2025-07-25 11:28:18.829] Modified files while updating package(s) chalk: 
+package.json
+yarn.lock
+[2025-07-25 11:28:18.833] Deleted temp directory for PackageUpdater.
+[2025-07-25 11:28:18.837] Package group chalk completed in 00:01:04.
+Successfully upgraded 1 packages: chalk
+[2025-07-25 11:28:18.840] Using VS Code provided token for Kusto authentication
+[2025-07-25 11:28:18.842] Updating package group (2/8): concurrently
+[2025-07-25 11:28:51.867] Updating concurrently from 8.2.2 to 9.2.0
+[2025-07-25 11:29:30.684] No new errors found after updating concurrently.
+[2025-07-25 11:29:30.685] Modified files while updating package(s) concurrently: 
+package.json
+yarn.lock
+[2025-07-25 11:29:30.688] Deleted temp directory for PackageUpdater.
+[2025-07-25 11:29:30.690] Package group concurrently completed in 00:01:11.
+Successfully upgraded 1 packages: concurrently
+[2025-07-25 11:29:30.693] Using VS Code provided token for Kusto authentication
+[2025-07-25 11:29:30.695] Updating package group (3/8): eslint
+[2025-07-25 11:30:01.850] Updating eslint from 8.57.1 to 9.32.0
+[2025-07-25 11:30:41.098] No new errors found after updating eslint.
+[2025-07-25 11:30:41.100] Modified files while updating package(s) eslint: 
+package.json
+yarn.lock
+[2025-07-25 11:30:41.103] Deleted temp directory for PackageUpdater.
+[2025-07-25 11:30:41.105] Package group eslint completed in 00:01:10.
+Successfully upgraded 1 packages: eslint
+[2025-07-25 11:30:41.108] Using VS Code provided token for Kusto authentication
+[2025-07-25 11:30:41.110] Updating package group (4/8): husky
+[2025-07-25 11:31:09.357] Updating husky from 8.0.3 to 9.1.7
+[2025-07-25 11:31:47.597] No new errors found after updating husky.
+[2025-07-25 11:31:47.599] Modified files while updating package(s) husky: 
+package.json
+yarn.lock
+[2025-07-25 11:31:47.602] Deleted temp directory for PackageUpdater.
+[2025-07-25 11:31:47.603] Package group husky completed in 00:01:06.
+Successfully upgraded 1 packages: husky
+[2025-07-25 11:31:47.606] Using VS Code provided token for Kusto authentication
+[2025-07-25 11:31:47.607] Updating package group (5/8): inquirer
+[2025-07-25 11:32:15.967] Updating inquirer from 8.2.6 to 12.8.2
+[2025-07-25 11:32:52.303] No new errors found after updating inquirer.
+[2025-07-25 11:32:52.305] Modified files while updating package(s) inquirer: 
+package.json
+yarn.lock
+[2025-07-25 11:32:52.308] Deleted temp directory for PackageUpdater.
+[2025-07-25 11:32:52.309] Package group inquirer completed in 00:01:04.
+Successfully upgraded 1 packages: inquirer
+[2025-07-25 11:32:52.312] Using VS Code provided token for Kusto authentication
+[2025-07-25 11:32:52.313] Updating package group (6/8): lint-staged
+[2025-07-25 11:33:28.369] Updating lint-staged from 15.5.2 to 16.1.2
+[2025-07-25 11:35:30.196] No new errors found after updating lint-staged.
+[2025-07-25 11:35:30.197] Modified files while updating package(s) lint-staged: 
+package.json
+yarn.lock
+[2025-07-25 11:35:30.200] Deleted temp directory for PackageUpdater.
+[2025-07-25 11:35:30.202] Package group lint-staged completed in 00:02:37.
+Successfully upgraded 1 packages: lint-staged
+[2025-07-25 11:35:30.204] Using VS Code provided token for Kusto authentication
+[2025-07-25 11:35:30.206] Updating package group (7/8): nx
+[2025-07-25 11:37:08.913] Updating nx from 20.8.2 to 21.3.6
+[2025-07-25 11:37:47.229] No new errors found after updating nx.
+[2025-07-25 11:37:47.231] Modified files while updating package(s) nx: 
+package.json
+yarn.lock
+[2025-07-25 11:37:47.234] Deleted temp directory for PackageUpdater.
+[2025-07-25 11:37:47.236] Package group nx completed in 00:02:17.
+Successfully upgraded 1 packages: nx
+[2025-07-25 11:37:47.238] Using VS Code provided token for Kusto authentication
+[2025-07-25 11:37:47.240] Updating package group (8/8): rimraf
+[2025-07-25 11:38:19.504] Updating rimraf from 5.0.10 to 6.0.1
+[2025-07-25 11:39:01.111] No new errors found after updating rimraf.
+[2025-07-25 11:39:01.113] Modified files while updating package(s) rimraf: 
+package.json
+yarn.lock
+[2025-07-25 11:39:01.115] Deleted temp directory for PackageUpdater.
+[2025-07-25 11:39:01.116] Package group rimraf completed in 00:01:13.
+Successfully upgraded 1 packages: rimraf
+[2025-07-25 11:39:01.118] All packages updated.
+[2025-07-25 11:39:01.120] Updater completed in 00:15:52.
+Successfully upgraded 8 packages.
+Partially upgraded 0 packages.
+Unable to upgrade 0 packages.
+Total packages available for upgrade: 8
+[2025-07-25 11:39:01.123] === Token Usage Summary ===
+Total API Calls: 0
+Total Tokens: 0 (Prompt: 0, Completion: 0)
+Usage by Model:
+
+[2025-07-25 11:39:01.125] Report written to c:\Users\lucygramley\.vscode-insiders\extensions\emilyfischer.jsts-upgrade-extension-0.0.1\dist\updates\logs\Ghost-fork_2025-07-25_11-23-08.txt
